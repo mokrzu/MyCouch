@@ -44,6 +44,7 @@ class MyCouch:
     ''' Delete current database '''
     def delete_db(self):
         r = requests.delete(self.home + '/' + self.current_db, auth=(self.login, self.passwd))
+        self.current_db = ""
         return r.content
     
     ''' Replicate current databse to selected target '''
