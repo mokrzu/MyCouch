@@ -38,5 +38,10 @@ Out[24]: '{"ok":true,"session_id":"863dad7474aecfa187783abf44546030","source_las
 "missing_found":7,"docs_read":7,
 "docs_written":6,"
 doc_write_failures":1}]}\n'
+
+In [28]: m.show_view("music", "artists")
+http://localhost:5984/albums/_design/music/_view/artists
+Out[28]: '{"total_rows":3,"offset":0,"rows":[\r\n{"id":"b12e2729fa652226423b1ac94100a0d0","key":"Clutch","value":"Electric Worry"},\r\n{"id":"b12e2729fa652226423b1ac941001cc1","key":"Foo Fighters","value":"There is Nothing Left to Lose"},\r\n{"id":"b12e2729fa652226423b1ac9410087fc","key":"Nirvana","value":"Man who sold the world"}\r\n]}\n'
+
 ```
 - - -
