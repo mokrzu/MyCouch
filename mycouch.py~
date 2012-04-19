@@ -27,7 +27,7 @@ class MyCouch:
     
     ''' Choose database, other methods will use current database '''
     def choose_db(self, name):
-        r = requests.get(self.home + "/" + name, auth=(self.login, self.passwd))
+        r = requests.get(self.home + "/" + name)
         info = json.loads(r.content)
         # Check if name is correct
         try:
